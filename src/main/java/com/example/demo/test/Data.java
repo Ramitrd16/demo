@@ -13,6 +13,6 @@ public class Data {
     @GetMapping(path = "/get-data")
     public JsonNode returnData(){
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.createObjectNode().put("Name", "Ramit").put("Age", 24);
+        return objectMapper.createObjectNode().put("Name","Ramit").put("Age",24).put("Occupation","Software Engineer");
     }
 }
